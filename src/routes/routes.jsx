@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 import { Navbar } from "../components/Navbar"
+import { Navigation } from "../components/Navigation"
 import { Buy } from "../pages/Buy"
 import { Cart } from "../pages/Cart"
 import { Home } from "../pages/Home"
@@ -18,6 +19,7 @@ function RoutesContainer() {
                 <Route path="/completar-compra " element={ <Buy/>}/>
                 <Route path="/*" element={ <NotFound/>}/>
             </Routes>
+            <Navigation/>
         </BrowserRouter>
     )
 }
