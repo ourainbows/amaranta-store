@@ -38,3 +38,13 @@
   font-size: 1.6rem;
   margin-bottom: 2.4rem;
 }
+
+.containerSeeTiktok{
+  display: flex;
+  justify-content: center;
+  margin-top: .4rem;
+}
+.seeTiktok{
+  text-decoration: underline;
+  font-size: 1.0rem;
+}

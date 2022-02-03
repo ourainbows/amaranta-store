@@ -6,16 +6,5 @@
 .gridImage{
     margin: .4rem;
     width: calc(50% - 1.1rem);
+    height: 49%;
 }
-/* .gridImage1{
-    height: 40%;
-}
-.gridImage2{
-    height: 50%;
-}
-.gridImage3{
-    height: 50%;
-}
-.gridImage4{
-    height: 40%;
-} */
