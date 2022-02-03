@@ -1,0 +1,21 @@
+.containerGrid{
+    height: 38.0rem;
+    margin: 5.2rem 1.2rem 4.4rem 1.2rem;
+}
+
+.gridImage{
+    margin: .4rem;
+    width: calc(50% - 1.1rem);
+}
+/* .gridImage1{
+    height: 40%;
+}
+.gridImage2{
+    height: 50%;
+}
+.gridImage3{
+    height: 50%;
+}
+.gridImage4{
+    height: 40%;
+} */
