@@ -13,7 +13,9 @@ function Navbar() {
                 </Link>
             </div>
             <span className={styles.cartContainer}>
-                <img src={cart} alt="cart" />
+                <Link to="carrito" >
+                    <img src={cart} alt="cart" />
+                </Link>
             </span>
         </nav>
     )

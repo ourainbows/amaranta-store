@@ -1,4 +1,4 @@
-import {NavLink, useLocation } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import "../styles/navigation.css"
 
 import { HomeSvg } from "./HomeSvg"
@@ -26,11 +26,11 @@ function Navigation() {
                     <NavLink to="carrito" className={({ isActive }) => isActive ? "active link" : "inactive link"}>
                         <CartSvg />
                         <span>Carrito</span>
-                    </NavLink> 
+                    </NavLink>
                 </li>
-             </ul>
+            </ul>
         </nav>
     )
 }
 
-export {Navigation}
+export { Navigation }
