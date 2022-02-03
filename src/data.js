@@ -1,6 +1,6 @@
 import {brassier,bufanda,bufandaInfinita,bustier,conjuntoMujer,sacoMascota} from "./assets/images/exportImages"
 
-const dataProdcuts = [
+const dataProducts = [
     {
         id: 1,
         name: "Bustier",
@@ -75,4 +75,4 @@ const dataProdcuts = [
     }
 ]
 
-export { dataProdcuts }
+export { dataProducts }

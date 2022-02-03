@@ -1,8 +1,10 @@
+import { RoutesContainer } from "./routes/routes";
+
 function App() {
   return (
-    <div className="App">
-      Hola mundo
-    </div>
+    <>
+      <RoutesContainer />
+    </>
   );
 }
 

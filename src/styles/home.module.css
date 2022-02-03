@@ -1,0 +1,40 @@
+.containerMain {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: calc(2.5rem + 3.2rem);
+}
+.containerBrand {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  bottom: -2.5rem;
+  color: var(--text-white);
+  background-color: var(--main-color);
+  left: calc((100vw - 6rem) / 4);
+  height: 7rem;
+  width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.containerBrand h1 {
+  font-family: "Salsa", cursive;
+  /* font-size: 4.0rem; */
+}
+.containerBrand span {
+  font-size: 1.2rem;
+}
+
+.bgImg {
+  width: 100%;
+}
+.aboutStore {
+  padding: 0 24px;
+  text-align: justify;
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+}

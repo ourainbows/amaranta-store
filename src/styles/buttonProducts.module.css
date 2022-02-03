@@ -1,0 +1,18 @@
+.containerButtonProducts {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonProducts {
+  color: var(--text-white);
+  background-color: var(--main-color);
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 3.3rem;
+  font-size: 1.7rem;
+  border-radius: 3px;
+}
