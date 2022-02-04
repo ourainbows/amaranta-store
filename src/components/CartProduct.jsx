@@ -1,9 +1,9 @@
-import styles from "../styles/cartProduct.css"
+import styles from "../styles/cartProduct.module.css"
 
 function CartProduct({ product }) {
     return (
         <div className={styles.cardProduct}>
-            <img src={product.image} alt={product.name} style={{width:"10px", height: "10px"}}/>
+            <img src={product.image} alt={product.name}/>
             <div>
                 <h3>{product.name}</h3>
                 <span>{product.price}</span>

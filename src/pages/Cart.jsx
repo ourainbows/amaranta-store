@@ -7,12 +7,11 @@ function Cart() {
     const { cartProducts } = useContext(ProductsContext)
     console.log(cartProducts)
     return (
-        <>
-            <div style={{ marginTop: "100px" }}>Vista del carrito</div>
+        <main className={styles.cartMain}>
             {cartProducts.map(product=>(
                 <CartProduct product={product} key={product.id}/>
             ))}
-        </>
+        </main>
     )
 }
 

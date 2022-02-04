@@ -1,0 +1,9 @@
+.cardProduct{
+    width: 100%;
+    font-size: 2.0rem;
+}
+.cardProduct img{
+    width: 20rem;
+    height: 20rem;
+
+}
