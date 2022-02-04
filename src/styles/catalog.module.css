@@ -1,0 +1,5 @@
+.containerCatalog{
+    display: flex;
+    flex-wrap: wrap;
+        margin: 3.0rem 1.8rem;
+}

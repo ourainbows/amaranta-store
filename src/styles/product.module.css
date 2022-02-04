@@ -1,0 +1,39 @@
+.containerProducts {
+  height: 25rem;
+  width: calc(50% - 1.6rem);
+  margin: 0.8rem;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  position: relative;
+}
+.containerProducts img {
+  width: 100%;
+  height: 60%;
+  border-radius: 20px;
+}
+.containerProductsInfo {
+  font-size: 1.6rem;
+  margin: 0.8rem;
+}
+.productName {
+  font-weight: 500;
+}
+.colors {
+  display: flex;
+  margin: 0.8rem 0 1.6rem 0;
+}
+.colors div {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+}
+.containerPriceButton {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.containerPriceButton span {
+  font-weight: bold;
+  color: #7c7c7c;
+}

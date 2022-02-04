@@ -12,7 +12,7 @@ const dataProducts = [
     },
     {
         id: 2,
-        name: "Saco para mascota",
+        name: "Saco mascota",
         colors: ["#C0478E", "#120820", "#C1B8B6"],
         size: ["U"],
         price: 20000,
@@ -30,8 +30,8 @@ const dataProducts = [
     },
     {
         id: 4,
-        name: "Conjunto ropa Interior",
-        colors: ["#5A85A5", "#B3BDC6", "#BBBFC0"],
+        name: "Conjunto Interior",
+        colors: ["#5A85A5", "#B3BDC6", "#5A0912"],
         size: ["U", "S", "SX "],
         price: 45000,
         category: 1,
@@ -48,7 +48,7 @@ const dataProducts = [
     },
     {
         id: 6,
-        name: "Gorro para mascota",
+        name: "Gorro mascota",
         colors: ["#608BAC"],
         size: ["U"],
         price: 10000,
@@ -57,7 +57,7 @@ const dataProducts = [
     },
     {
         id: 7,
-        name: "Conjunto para mascota ",
+        name: "Conjunto mascota ",
         colors: ["#955E6B", "#A6A7A2"],
         size: ["U"],
         price: 25000,
