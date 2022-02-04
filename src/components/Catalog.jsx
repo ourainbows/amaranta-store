@@ -1,9 +1,9 @@
-import { dataProducts } from "../data"
 import { Product } from "./Product"
 import styles from "../styles/catalog.module.css"
 
 
-function Catalog() {
+function Catalog({dataProducts}) {
+    
     return (
         <main className={styles.containerCatalog}>
             {dataProducts.map(product => (

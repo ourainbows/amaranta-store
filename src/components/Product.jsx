@@ -20,7 +20,7 @@ function Product({ product }) {
                 </div>
                 <div className={styles.containerPriceButton}>
                     <p><span>$ </span>{product.price}</p>
-                    <AddToCart />
+                    <AddToCart product={product}/>
                 </div>
             </div>
         </div>
