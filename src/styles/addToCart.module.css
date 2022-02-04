@@ -12,4 +12,14 @@
     bottom: 0;
     right: .8rem;
     bottom: .8rem;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.add:hover{
+    background-color:#470a28;
+    
+}
+.add:active{
+    background-color: #963964;
+    
 }

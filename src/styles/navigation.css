@@ -35,3 +35,25 @@
 .active svg path {
   stroke: none;
 }
+.navigarionCart{
+  position: relative;
+}
+.link div{
+    position: absolute;
+    top: 1px;
+    right: -1px;
+    width: 1.0rem;
+    height: 1.0rem;
+    color: white;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    font-family: 'Salsa';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    color: white;
+}
+.active div{
+  border: 1px solid #FFFF;
+}

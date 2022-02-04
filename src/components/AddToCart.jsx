@@ -7,7 +7,6 @@ function AddToCart({ product }) {
     const onAdd =  () => {
         setCartProducts(prevState => [...prevState, product])
     }
-
     return (
         <button onClick={onAdd}className={styles.add}>+</button>
     )

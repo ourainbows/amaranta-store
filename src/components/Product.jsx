@@ -4,7 +4,7 @@ import { AddToCart } from "./AddToCart"
 function Product({ product }) {
     return (
         <div className={styles.containerProducts}>
-            <img src={product.image} alt={product.name} width="50" />
+            <img src={product.image} alt={product.name}/>
             <div className={styles.containerProductsInfo}>
                 <span className={styles.productName}>{product.name}</span>
                 <div className={styles.colors}>

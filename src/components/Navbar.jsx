@@ -2,8 +2,11 @@ import styles from "../styles/navbar.module.css"
 import logo from "../assets/icons/logo.svg"
 import cart from "../assets/icons/cart.svg"
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { ProductsContext } from "../context/ProductsProvider/ProductsProvider";
 
 function Navbar() {
+    const { cartProducts } = useContext(ProductsContext)
     return (
         <nav className={styles.navbar}>
             <div className={styles.logoContainer}>
@@ -16,6 +19,7 @@ function Navbar() {
                 <Link to="carrito" >
                     <img src={cart} alt="cart" />
                 </Link>
+                {cartProducts.length ? <div className={styles.carDot}>{cartProducts.length}</div> : null}
             </span>
         </nav>
     )
