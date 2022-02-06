@@ -5,9 +5,9 @@ import styles from "../styles/cart.module.css"
 
 function Cart() {
     const { cartProducts, setCartProducts } = useContext(ProductsContext)
-    /* const totalPrice = cartProducts.reduce(
-        (previousValue, currentValue) => previousValue + currentValue.price, 0
-    ) */
+    const totalPrice = cartProducts.reduce(
+        (previousValue, currentValue) => previousValue + currentValue.price * currentValue.quantity, 0
+    )
     return (
         <>
             {cartProducts.length ? <main className={styles.cartMain}>
@@ -19,7 +19,7 @@ function Cart() {
                         id={i}
                         key={i} />
                 ))}
-                {/* <div>{totalPrice}</div> */}
+                <div>{totalPrice}</div>
             </main> : <div className={styles.noProducts}>No has agregado nada aun :(</div>}
         </>
     )
