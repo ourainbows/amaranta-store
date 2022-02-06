@@ -3,8 +3,7 @@ import styles from "../styles/cartProduct.module.css"
 import { TrashSvg } from "./TrashSvg"
 
 function CartProduct({ product, setCartProducts, cartProducts, id }) {
-    console.log(cartProducts[id].quantity)
-
+    console.log(cartProducts)
     const [quantity, setQuantity] = useState(1)
 
     const onDelete = id => {
@@ -24,6 +23,12 @@ function CartProduct({ product, setCartProducts, cartProducts, id }) {
         setCartProducts(items)
         setQuantity(quantity - 1)
     }
+    const handleSelect = (event) =>{
+        const items = [...cartProducts]
+        items[id].height = event.target.value
+        setCartProducts(items)
+        /* setQuantity(quantity - 1) */
+    } 
 
     return (
         <>
@@ -45,8 +50,8 @@ function CartProduct({ product, setCartProducts, cartProducts, id }) {
                     </div>
                 </div>
                 <div>
-                    <select> {product.size.map(size => (
-                        <option key={product.id + size}>{size}</option>
+                    <select onChange={handleSelect}> {product.size.map(size => (
+                        <option value={size} key={product.id + size}>{size}</option>
                          ))}
                     </select>
                 </div>
