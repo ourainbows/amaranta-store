@@ -32,10 +32,11 @@
 }
 .carDot{
   position: absolute;
-    top: -1px;
-    right: -4px;
-    width: 1.0rem;
-    height: 1.0rem;
+    top: -8px;
+    font-size: 1.35rem;
+    right: -8px;
+    width: 1.60rem;
+    height: 1.60rem;
     background-color: white;
     border-radius: 50%;
     /* text-align: center; */

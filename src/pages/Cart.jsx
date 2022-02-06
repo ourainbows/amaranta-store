@@ -4,14 +4,31 @@ import { ProductsContext } from "../context/ProductsProvider/ProductsProvider"
 import styles from "../styles/cart.module.css"
 
 function Cart() {
-    const { cartProducts } = useContext(ProductsContext)
-    console.log(cartProducts)
+    const { cartProducts, setCartProducts } = useContext(ProductsContext)
+    /* const addValues = () => {
+        cartProducts.foreach(product{
+            product["quantity"] = 1
+    product["color"] = product.colors[0]
+    product["height"] = product.size[0]
+        })
+    } */
+    const totalPrice = cartProducts.reduce(
+        (previousValue, currentValue) => previousValue + currentValue.price, 0
+    )
     return (
-        <main className={styles.cartMain}>
-            {cartProducts.map(product=>(
-                <CartProduct product={product} key={product.id}/>
-            ))}
-        </main>
+        <>
+            {cartProducts.length ? <main className={styles.cartMain}>
+                {cartProducts.map((product, i) => (
+                    <CartProduct
+                        product={product}
+                        setCartProducts={setCartProducts}
+                        cartProducts={cartProducts}
+                        id={i}
+                        key={i} />
+                ))}
+                <div>{totalPrice}</div>
+            </main> : <div className={styles.noProducts}>No has agregado nada aun :(</div>}
+        </>
     )
 }
 
