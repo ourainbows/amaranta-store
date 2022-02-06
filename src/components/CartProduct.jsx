@@ -3,10 +3,7 @@ import styles from "../styles/cartProduct.module.css"
 import { TrashSvg } from "./TrashSvg"
 
 function CartProduct({ product, setCartProducts, cartProducts, id }) {
-    console.log(cartProducts)
-    product["quantity"] = 1
-    product["color"] = product.colors[0]
-    product["height"] = product.size[0]
+    console.log(cartProducts[id].quantity)
 
     const [quantity, setQuantity] = useState(1)
 
@@ -15,13 +12,19 @@ function CartProduct({ product, setCartProducts, cartProducts, id }) {
             i !== id
         )))
     }
-
-    const onAddQuantity = (id) => {
+    const onAddQuantity = () => {
+        const items = [...cartProducts]
+        items[id].quantity++ 
+        setCartProducts(items)
         setQuantity(quantity + 1)
     }
     const onLessQuantity = (id) => {
+        const items = [...cartProducts]
+        items[id].quantity--
+        setCartProducts(items)
         setQuantity(quantity - 1)
     }
+
     return (
         <>
             <div className={styles.cardProduct}>
@@ -33,6 +36,7 @@ function CartProduct({ product, setCartProducts, cartProducts, id }) {
                         {product.colors.map(color => (
                             <label key={color}>
                                 <input
+                                    className={styles.radioButton}
                                     type="radio"
                                     name={product.id}
                                 />
@@ -50,7 +54,7 @@ function CartProduct({ product, setCartProducts, cartProducts, id }) {
                     <TrashSvg />
                 </div>
                 <div>
-                    <button onClick={() => onAddQuantity(id)}>+</button>
+                    <button onClick={onAddQuantity}>+</button>
                     <div>{quantity}</div>
                     <button disabled={quantity === 1} onClick={() => onLessQuantity(id)}>-</button>
                 </div>

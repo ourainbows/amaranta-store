@@ -5,16 +5,9 @@ import styles from "../styles/cart.module.css"
 
 function Cart() {
     const { cartProducts, setCartProducts } = useContext(ProductsContext)
-    /* const addValues = () => {
-        cartProducts.foreach(product{
-            product["quantity"] = 1
-    product["color"] = product.colors[0]
-    product["height"] = product.size[0]
-        })
-    } */
-    const totalPrice = cartProducts.reduce(
+    /* const totalPrice = cartProducts.reduce(
         (previousValue, currentValue) => previousValue + currentValue.price, 0
-    )
+    ) */
     return (
         <>
             {cartProducts.length ? <main className={styles.cartMain}>
@@ -26,7 +19,7 @@ function Cart() {
                         id={i}
                         key={i} />
                 ))}
-                <div>{totalPrice}</div>
+                {/* <div>{totalPrice}</div> */}
             </main> : <div className={styles.noProducts}>No has agregado nada aun :(</div>}
         </>
     )

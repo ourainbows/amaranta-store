@@ -4,7 +4,10 @@ import styles from "../styles/addToCart.module.css"
 
 function AddToCart({ product }) {
     const{setCartProducts} = useContext(ProductsContext)
-    const onAdd =  () => {
+    const onAdd = () => {
+        product["quantity"] = 1
+        product["color"] = product.colors[0]
+        product["height"] = product.size[0]
         setCartProducts(prevState => [...prevState, product])
     }
     return (
