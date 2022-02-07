@@ -1,0 +1,42 @@
+.productForm{
+    display: flex;
+}
+.productForm img{
+    height: 5.0rem;
+    width: 5.0rem;
+    border-radius: 50%;
+}
+.productInfo{
+    font-size: 1.2rem;
+    margin-left: .8rem;
+}
+.productFormName{
+    font-weight: 500;
+}
+.productFormValuesQuantity, .productFormValuesColor{
+    margin-right: 1.6rem;
+}
+.productFormValuesColor{
+    display: flex;
+    align-items: center;
+}
+.productFormValues{
+    font-weight: 300;
+    display: flex;
+}
+.valuesColor{
+    width: 1.0rem;
+    height: 1.0rem;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: .4rem;
+}
+.productFormPrice::before{
+    content: "$";
+}
+.productDivider{
+    margin: .8rem 0;
+    border: none;
+    height: .1rem;
+    background-color: #c4c4c4;
+}

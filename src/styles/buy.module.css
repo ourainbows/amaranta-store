@@ -1,0 +1,78 @@
+.mainBuy {
+  margin: calc(5.6rem + 3rem) 2.4rem calc(5.3rem + 3rem) 2.4rem;
+}
+.mainBuy h2 {
+  color: var(--main-color);
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2.8rem;
+}
+.form {
+  margin-bottom: 2rem;
+}
+.form input,
+.form textarea {
+  background-color: #f2f2f2;
+  color: #8f8e8e;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 1.6rem;
+  padding-left: 0.8rem;
+}
+.form input {
+  height: 4.2rem;
+}
+.form textarea {
+  height: 12.5rem;
+  padding-top: 0.8rem;
+  resize: none;
+}
+.productsForm {
+  padding: 0 0.8rem;
+}
+.bigDvider {
+  border: none;
+  height: 0.3rem;
+  background-color: #c4c4c4;
+  margin-top: 2rem;
+  margin-bottom: 2.8rem;
+}
+.price {
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--main-color);
+  justify-content: space-between;
+  margin-bottom: 3.2rem;
+}
+.priceNumber {
+  font-weight: 600;
+}
+.priceNumber::before {
+  content: "$ ";
+}
+.btnBuy {
+  height: 4.8rem;
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+.btnBuy a {
+  text-decoration: none;
+  color: var(--text-white);
+  font-size: 1.8rem;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btnBuy a:hover {
+  border-radius: 5px;
+  background-color: #470a28;
+}
+.pInfo {
+  color: var(--main-color);
+  font-size: 0.9rem;
+}
