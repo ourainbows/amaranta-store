@@ -19,7 +19,7 @@ function Product({ product }) {
                     }
                 </div>
                 <div className={styles.containerPriceButton}>
-                    <p><span>$ </span>{product.price}</p>
+                    <p><span>$ </span>{product.price.toFixed(3)}</p>
                     <AddToCart product={product}/>
                 </div>
             </div>

@@ -1,13 +1,12 @@
 import { useContext } from "react"
+import { Link } from "react-router-dom"
 import { CartProduct } from "../components/CartProduct"
 import { ProductsContext } from "../context/ProductsProvider/ProductsProvider"
 import styles from "../styles/cart.module.css"
 
 function Cart() {
-    const { cartProducts, setCartProducts } = useContext(ProductsContext)
-    const totalPrice = cartProducts.reduce(
-        (previousValue, currentValue) => previousValue + currentValue.price * currentValue.quantity, 0
-    )
+    const { cartProducts, setCartProducts, totalPrice } = useContext(ProductsContext)
+
     return (
         <>
             {cartProducts.length ? <main className={styles.cartMain}>
@@ -19,8 +18,13 @@ function Cart() {
                         id={i}
                         key={i} />
                 ))}
-                <div>{totalPrice}</div>
-            </main> : <div className={styles.noProducts}>No has agregado nada aun :(</div>}
+                <div className={styles.btnBuyContainer}>
+                    <Link className={styles.btnBuy} to="/completar-compra">
+                        <span>Continuar</span>
+                        <span className={styles.btnBuyPrice}>$ {totalPrice.toFixed(3)}</span>
+                    </Link>
+                </div>
+            </main> : <div className={styles.noProducts}><p>No has agregado nada aun :(</p></div>}
         </>
     )
 }

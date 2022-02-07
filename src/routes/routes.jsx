@@ -18,7 +18,7 @@ function RoutesContainer() {
                     <Route path="/" element={<Home />} />
                     <Route path="/productos" element={<Products />} />
                     <Route path="/carrito" element={<Cart />} />
-                    <Route path="/completar-compra " element={<Buy />} />
+                    <Route path="/completar-compra" element={<Buy />} />
                     <Route path="/*" element={<NotFound />} />
                 </Routes>
                 <Navigation />

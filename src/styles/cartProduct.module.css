@@ -1,36 +1,82 @@
-.cardProduct{
-    width: 100%;
-    font-size: 2.0rem;
+.cardProduct {
+  background-color: #f2f2f2;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 12rem;
+  align-items: center;
+  padding: 0 1.6rem 0 .8rem;
+  position: relative;
+  border-radius: 2px;
+  margin-bottom: 2rem;
 }
-.cardProduct img{
-    width: 20rem;
-    height: 20rem;
-
+.cardProductSection {
+  display: flex;
 }
-/*     input[type='radio']:after {
-        width: 15px;
-        height: 15px;
-        border-radius: 15px;
-        top: -2px;
-        left: -1px;
-        position: relative;
-        background-color: #00ff00;
-        content: '';
-        display: inline-block;
-        visibility: visible;
-        border: 2px solid rgb(255, 0, 0);
-    }
+.cardProduct img {
+  border-radius: 20px;
+  height: 9rem;
+  width: 9rem;
+}
+.cardProductInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-left: 0.8rem;
+  font-size: 1.5rem;
+}
+.cardProductInfo span {
+  font-weight: bold;
+  margin-right: 0.2rem;
+}
+.cardProductColors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.color {
+  height: 1.8rem;
+  width: 1.8rem;
+  border: solid 3px;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+}
+.cardProductValues {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.cardProductQuantity {
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.cardProductQuantity button {
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.cardProductQuantity div {
+  margin: 0 2.5rem;
+}
+.cardProductSelect {
+  appearance: none;
+  background: var(--main-color);
+  color: var(--text-white);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  width: 4rem;
+  height: 2rem;
+}
 
-    input[type='radio']:checked:after {
-        width: 15px;
-        height: 15px;
-        border-radius: 15px;
-        top: -2px;
-        left: -1px;
-        position: relative;
-        background-color: #ffa500;
-        content: '';
-        display: inline-block;
-        visibility: visible;
-        border: 2px solid rgb(255, 0, 0);
-    } */
+.cardProductTrash {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+}

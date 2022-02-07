@@ -3,8 +3,8 @@ import styles from "../styles/cartProduct.module.css"
 import { TrashSvg } from "./TrashSvg"
 
 function CartProduct({ product, setCartProducts, cartProducts, id }) {
-    console.log(cartProducts)
     const [quantity, setQuantity] = useState(1)
+    const [currentlyColor, setCurrentlyColor] = useState(product.color)
 
     const onDelete = id => {
         setCartProducts(cartProducts.filter((item, i) => (
@@ -13,7 +13,7 @@ function CartProduct({ product, setCartProducts, cartProducts, id }) {
     }
     const onAddQuantity = () => {
         const items = [...cartProducts]
-        items[id].quantity++ 
+        items[id].quantity++
         setCartProducts(items)
         setQuantity(quantity + 1)
     }
@@ -23,45 +23,59 @@ function CartProduct({ product, setCartProducts, cartProducts, id }) {
         setCartProducts(items)
         setQuantity(quantity - 1)
     }
-    const handleSelect = (event) =>{
+    const handleSelect = (event) => {
         const items = [...cartProducts]
         items[id].height = event.target.value
         setCartProducts(items)
-        /* setQuantity(quantity - 1) */
-    } 
+    }
+    const onChangeColor = (color) => {
+        const items = [...cartProducts]
+        items[id].color = color
+        setCartProducts(items)
+        setCurrentlyColor(color)
+    }
 
     return (
         <>
             <div className={styles.cardProduct}>
-                <img src={product.image} alt={product.name} />
-                <div>
-                    <h3>{product.name}</h3>
-                    <span>{product.price}</span>
-                    <div>
-                        {product.colors.map(color => (
-                            <label key={color}>
-                                <input
-                                    className={styles.radioButton}
-                                    type="radio"
-                                    name={product.id}
-                                />
-                            </label>
-                        ))}
+                <div className={styles.cardProductSection}>
+                    <img src={product.image} alt={product.name} />
+                    <div className={styles.cardProductInfo}>
+                        <h3>{product.name}</h3>
+                        <p><span>$</span>{product.price.toFixed(3)}</p>
+                        <div className={styles.cardProductColors}>
+                            {product.colors.map(color => (
+                                <button
+                                    onClick={() => onChangeColor(color)}
+                                    className={styles.color}
+                                    key={color}
+                                    style={
+                                        {
+                                            backgroundColor: currentlyColor === color ? color : "#F2F2F2",
+                                            borderColor: color
+                                        }}>
+                                </button>
+                            ))}
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <select onChange={handleSelect}> {product.size.map(size => (
-                        <option value={size} key={product.id + size}>{size}</option>
-                         ))}
-                    </select>
+                <div className={styles.cardProductValues}>
+                    <div className={styles.cardProductHeigth}>
+                        <select
+                            className={styles.cardProductSelect} onChange={handleSelect}> {product.size.map(size => (
+                            <option value={size} key={product.id + size}>{size}</option>
+                        ))}
+                        </select>
+                    </div>
+                    <div className={styles.cardProductQuantity}>
+                        <button disabled={quantity === 1} onClick={() => onLessQuantity(id)}>-</button>
+                        <div>{quantity}</div>
+                        <button onClick={onAddQuantity}>+</button>
+                       
+                    </div>
                 </div>
-                <div onClick={() => { onDelete(id) }}>
+                <div className={styles.cardProductTrash} onClick={() => { onDelete(id) }}>
                     <TrashSvg />
-                </div>
-                <div>
-                    <button onClick={onAddQuantity}>+</button>
-                    <div>{quantity}</div>
-                    <button disabled={quantity === 1} onClick={() => onLessQuantity(id)}>-</button>
                 </div>
             </div>
         </>

@@ -6,7 +6,7 @@ const dataProducts = [
         name: "Bustier",
         colors: ["#5A0912", "#BF8B38", "#0F858C"],
         size: ["S"],
-        price: 35000,
+        price: 35.000,
         category: 1,
         image: bustier
     },
@@ -15,7 +15,7 @@ const dataProducts = [
         name: "Saco mascota",
         colors: ["#C0478E", "#120820", "#C1B8B6"],
         size: ["U"],
-        price: 20000,
+        price: 20.000,
         category: 2,
         image: sacoMascota
     },
@@ -24,7 +24,7 @@ const dataProducts = [
         name: "Bufanda Infinita",
         colors: ["#CE8F30", "#405459"],
         size: ["U"],
-        price: 25000,
+        price: 25.000,
         category: 1,
         image: bufandaInfinita
     },
@@ -33,7 +33,7 @@ const dataProducts = [
         name: "Conjunto Interior",
         colors: ["#5A85A5", "#B3BDC6", "#5A0912"],
         size: ["U", "S", "SX "],
-        price: 45000,
+        price: 45.000,
         category: 1,
         image: conjuntoMujer
     },
@@ -42,7 +42,7 @@ const dataProducts = [
         name: "Bufanda",
         colors: ["#306764"],
         size: ["U"],
-        price: 20000,
+        price: 20.000,
         category: 1,
         image: bufanda
     },
@@ -51,7 +51,7 @@ const dataProducts = [
         name: "Gorro mascota",
         colors: ["#608BAC"],
         size: ["U"],
-        price: 10000,
+        price: 10.000,
         category: 2,
         image: sacoMascota
     },
@@ -60,7 +60,7 @@ const dataProducts = [
         name: "Conjunto mascota ",
         colors: ["#955E6B", "#A6A7A2"],
         size: ["U"],
-        price: 25000,
+        price: 25.000,
         category: 2,
         image: sacoMascota
     },
@@ -69,7 +69,7 @@ const dataProducts = [
         name: "Brassier",
         colors: ["#CDA0B5", "#80A9A3"],
         size: ["U", "S", "L"],
-        price: 20000,
+        price: 20.000,
         category: 1,
         image: brassier
     }
