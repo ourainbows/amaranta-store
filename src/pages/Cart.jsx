@@ -24,7 +24,7 @@ function Cart() {
                         <span className={styles.btnBuyPrice}>$ {totalPrice.toFixed(3)}</span>
                     </Link>
                 </div>
-            </main> : <div className={styles.noProducts}><p>No has agregado nada aun :(</p></div>}
+            </main> : <div className={styles.noProducts}><p>No has agregado<br/>nada al carrito aún :(</p></div>}
         </>
     )
 }

@@ -1,4 +1,17 @@
-import {brassier,bufanda,bufandaInfinita,bustier,conjuntoMujer,sacoMascota} from "./assets/images/exportImages"
+import {
+    brassier,
+    bufanda,
+    bufandaInfinita,
+    bustier,
+    conjuntoMujer,
+    sacoMascota,
+    bag,
+    bags,
+    gaban,
+    dogFlag,
+    grayScarf,
+    hatPet,
+    clothePet} from "./assets/images/exportImages"
 
 const dataProducts = [
     {
@@ -30,9 +43,9 @@ const dataProducts = [
     },
     {
         id: 4,
-        name: "Conjunto Interior",
+        name: "Conjunto Interiores",
         colors: ["#5A85A5", "#B3BDC6", "#5A0912"],
-        size: ["U", "S", "SX "],
+        size: ["U"],
         price: 45.000,
         category: 1,
         image: conjuntoMujer
@@ -53,7 +66,7 @@ const dataProducts = [
         size: ["U"],
         price: 10.000,
         category: 2,
-        image: sacoMascota
+        image: hatPet
     },
     {
         id: 7,
@@ -62,17 +75,62 @@ const dataProducts = [
         size: ["U"],
         price: 25.000,
         category: 2,
-        image: sacoMascota
+        image: clothePet
     },
     {
         id: 8,
+        name: "Bufanda Larga",
+        colors: ["#4F535B"],
+        size: ["U"],
+        price: 25.000,
+        category: 1,
+        image: grayScarf
+    },
+    {
+        id: 9,
         name: "Brassier",
         colors: ["#CDA0B5", "#80A9A3"],
-        size: ["U", "S", "L"],
-        price: 20.000,
+        size: ["U"],
+        price: 25.000,
         category: 1,
         image: brassier
-    }
+    },
+    {
+        id: 10,
+        name: "Mochila",
+        colors: ["#725037", "#D4D5D0"],
+        size: ["U"],
+        price: 15.000,
+        category: 2,
+        image: bag
+    },
+    {
+        id: 11,
+        name: "Billetera",
+        colors: ["#63694F", "#D57434", "#5F5959", "#D5D3C4", ],
+        size: ["U"],
+        price: 15.000,
+        category: 2,
+        image: bags
+    },
+    {
+        id: 12,
+        name: "Pañoleta",
+        colors: ["#101627", "#5D2111"],
+        size: ["U"],
+        price: 10.000,
+        category: 2,
+        image: dogFlag
+    },
+    {
+        id: 13,
+        name: "Bufanda Hombre",
+        colors: ["#807269"],
+        size: ["U"],
+        price: 20.000,
+        category: 1,
+        image: gaban
+    },
 ]
 
 export { dataProducts }

@@ -15,8 +15,9 @@ function Home() {
                         <span>La tienda de ropa a tu medida</span>
                     </div>
                 </div>
-                <p className={styles.aboutStore}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit exercitationem ipsum voluptatem est, aliquam totam modi non, error atque autem, dolor ut quaerat deleniti. Et harum illo ducimus porro iusto.
-                    Quo eligendi fugit ut in neque provident libero quos, maiores fuga voluptate qui iste minima doloribus natus pariatur delectus sapiente aperiam. Quo hic magnam dolores, et nobis ratione quasi quidem?</p>
+                <p className={styles.aboutStore}>En Amaranta encontraras los productos con la mejor calidad del mercado.<br/>
+                Todos nuestros productos son fabricados 100% a mano.
+                </p>
                 {/* <ButtonProdcuts /> */}
                 <GridImages />
                 <ButtonProdcuts />
