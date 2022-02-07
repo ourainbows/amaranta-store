@@ -21,7 +21,7 @@ function Home() {
                 <GridImages />
                 <ButtonProdcuts />
                 <div className={styles.containerSeeTiktok}>
-                    <span className={styles.seeTiktok}>👉 Mira aqui nuestra cuenta de TikTok</span>
+                    <a href="https://www.tiktok.com/@lacatt99" className={styles.seeTiktok}>👉 Mira aqui nuestra cuenta de TikTok</a>
                 </div>
             </main>
             <Footer />

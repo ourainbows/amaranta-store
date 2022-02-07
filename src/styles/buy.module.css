@@ -13,7 +13,6 @@
 .form input,
 .form textarea {
   background-color: #f2f2f2;
-  color: #8f8e8e;
   width: 100%;
   border: none;
   border-radius: 10px;
@@ -27,6 +26,17 @@
   height: 12.5rem;
   padding-top: 0.8rem;
   resize: none;
+}
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #8f8e8e;
+}
+.form input:focus,
+.form textarea:focus {
+  /* transform: scale(1.1); */
+  transition: 0.3s;
+  outline: none;
+  box-shadow: 1px 1px 10px #8f8e8e,-1px -1px 10px #8f8e8e ;
 }
 .productsForm {
   padding: 0 0.8rem;
