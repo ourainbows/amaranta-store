@@ -13,9 +13,6 @@
   list-style: none;
   width: 100%;
 }
-.img {
-  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
-}
 .active {
   color: var(--main-color);
   font-weight: bold;
@@ -58,4 +55,10 @@
 }
 .active div{
   border: 1px solid #FFFF;
+}
+
+@media(min-width: 1024px){
+  .navigation{
+    display: none;
+  }
 }
