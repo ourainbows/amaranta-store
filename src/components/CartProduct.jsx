@@ -3,7 +3,7 @@ import styles from "../styles/cartProduct.module.css"
 import { TrashSvg } from "./TrashSvg"
 
 function CartProduct({ product, setCartProducts, cartProducts, id }) {
-    const [quantity, setQuantity] = useState(1)
+    const [quantity, setQuantity] = useState(product.quantity)
     const [currentlyColor, setCurrentlyColor] = useState(product.color)
 
     const onDelete = id => {
@@ -13,13 +13,17 @@ function CartProduct({ product, setCartProducts, cartProducts, id }) {
     }
     const onAddQuantity = () => {
         const items = [...cartProducts]
-        items[id].quantity++
+        const amount = items[id].quantity + 1 
+        items[id].quantity = amount
+        items[id].value = amount * items[id].price
         setCartProducts(items)
         setQuantity(quantity + 1)
     }
     const onLessQuantity = (id) => {
         const items = [...cartProducts]
-        items[id].quantity--
+        const amount = items[id].quantity - 1
+        items[id].quantity = amount
+        items[id].value = amount * items[id].price
         setCartProducts(items)
         setQuantity(quantity - 1)
     }

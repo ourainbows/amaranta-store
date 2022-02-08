@@ -8,6 +8,7 @@ function AddToCart({ product }) {
         product["quantity"] = 1
         product["color"] = product.colors[0]
         product["height"] = product.size[0]
+        product["value"] = product.price * product.quantity
         setCartProducts(prevState => [...prevState, product])
     }
     return (

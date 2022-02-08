@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 import { Navbar } from "../components/Navbar"
 import { Navigation } from "../components/Navigation"
+import { ScrollToTop } from "../components/ScrollToTop"
 import { ProductsProvider } from "../context/ProductsProvider/ProductsProvider"
 import { Buy } from "../pages/Buy"
 import { Cart } from "../pages/Cart"
@@ -13,6 +14,7 @@ function RoutesContainer() {
     return (
         <ProductsProvider>
             <BrowserRouter>
+                <ScrollToTop/>
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />} />

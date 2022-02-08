@@ -7,7 +7,7 @@ function BuyProduct({ product }) {
             <img src={product.image} alt={product.name}/>
             <div className={styles.productInfo}>
                 <h3 className={styles.productFormName}>{product.name}</h3>
-                <span className={styles.productFormPrice}>{product.price.toFixed(3)}</span>
+                <span className={styles.productFormPrice}>{product.value.toFixed(3)}</span>
                 <div className={styles.productFormValues}>
                     <span className={styles.productFormValuesQuantity}>Cantidad: {product.quantity}</span>
                     <span className={styles.productFormValuesColor}>Color:

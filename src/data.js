@@ -17,7 +17,7 @@ const dataProducts = [
         id: 1,
         name: "Bustier",
         colors: ["#5A0912", "#BF8B38", "#0F858C"],
-        size: ["S"],
+        size: ["u"],
         price: 35.000,
         category: 1,
         image: bustier
