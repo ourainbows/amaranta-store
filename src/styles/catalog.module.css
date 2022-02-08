@@ -1,5 +1,10 @@
+.sectionContainer {
+  display: flex;
+  justify-content: center;
+}
 .containerCatalog {
   display: flex;
   flex-wrap: wrap;
   margin: 3rem 1.8rem;
+  max-width: 1100px;
 }

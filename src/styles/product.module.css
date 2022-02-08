@@ -38,3 +38,13 @@
   font-weight: bold;
   color: #7c7c7c;
 }
+@media (max-width: 320px){
+  .containerProducts{
+    width: 100%;
+  }
+}
+@media (min-width: 768px){
+.containerProducts {
+    width: calc(33% - 1.6rem);
+  }
+}

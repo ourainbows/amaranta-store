@@ -16,7 +16,7 @@
   font-size: 1.7rem;
   border-radius: 3px;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .buttonProducts {
     width: 24rem;
     height: 3.4rem;

@@ -7,7 +7,6 @@ import {
     sacoMascota,
     bag,
     bags,
-    gaban,
     dogFlag,
     grayScarf,
     hatPet,
@@ -43,7 +42,7 @@ const dataProducts = [
     },
     {
         id: 4,
-        name: "Conjunto Interiores",
+        name: "Interiores",
         colors: ["#5A85A5", "#B3BDC6", "#5A0912"],
         size: ["U"],
         price: 45.000,
@@ -70,7 +69,7 @@ const dataProducts = [
     },
     {
         id: 7,
-        name: "Conjunto mascota ",
+        name: "Conjunto",
         colors: ["#955E6B", "#A6A7A2"],
         size: ["U"],
         price: 25.000,
@@ -80,7 +79,7 @@ const dataProducts = [
     {
         id: 8,
         name: "Bufanda Larga",
-        colors: ["#4F535B"],
+        colors: ["#4F535B", "#807269"],
         size: ["U"],
         price: 25.000,
         category: 1,
@@ -121,15 +120,6 @@ const dataProducts = [
         price: 10.000,
         category: 2,
         image: dogFlag
-    },
-    {
-        id: 13,
-        name: "Bufanda Hombre",
-        colors: ["#807269"],
-        size: ["U"],
-        price: 20.000,
-        category: 1,
-        image: gaban
     },
 ]
 

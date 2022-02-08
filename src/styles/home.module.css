@@ -58,7 +58,7 @@
   color: black;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .containerMain {
     margin-bottom: calc(8rem + 2.4rem);
   }

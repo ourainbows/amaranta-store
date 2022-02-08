@@ -2,17 +2,19 @@ import { Product } from "./Product"
 import styles from "../styles/catalog.module.css"
 
 
-function Catalog({dataProducts}) {
-    
+function Catalog({ dataProducts }) {
     return (
-        <main className={styles.containerCatalog}>
-            {dataProducts.map(product => (
-                <Product
-                    key={product.id}
-                    product={product}
-                />
-            ))}
-        </main>
+        <section className={styles.sectionContainer}>
+            <div className={styles.containerCatalog}>
+
+                {dataProducts.map(product => (
+                    <Product
+                        key={product.id}
+                        product={product}
+                    />
+                ))}
+            </div>
+        </section>
     )
 }
 
