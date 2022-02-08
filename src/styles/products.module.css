@@ -1,37 +1,51 @@
-.mainProducts{
-    margin-top: calc(5.6rem + 4.0rem);
-    margin-bottom: calc(5.4rem + 3.0rem);
+.mainProducts {
+  margin-top: calc(5.6rem + 4rem);
+  margin-bottom: calc(5.4rem + 3rem);
 }
-.categoriesTittle{
-    margin: 0 2.4rem 3.0rem 2.4rem; 
-    color: var(--main-color);
-    font-size: 2.5rem;
-    font-weight: 600;
+.categoriesTittle {
+  margin: 0 2.4rem 3rem 2.4rem;
+  color: var(--main-color);
+  font-size: 2.5rem;
+  font-weight: 600;
 }
-.btnsContainer{
-    margin: 0 2.4rem;
-    display: flex;
-    justify-content: space-between;
+.btnsContainer {
+  margin: 0 2.4rem;
+  display: flex;
+  justify-content: space-between;
 }
-.btnc{
-    width: 30%;
-    height: 2.6rem;
-    border: none;
-    border-radius: 11px;
-    font-weight: 500;
-    font-size: 1.5rem;
-    cursor: pointer;
+.btnc {
+  width: 30%;
+  height: 2.6rem;
+  border: none;
+  border-radius: 11px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
-.btncActive{
-    background-color: var(--main-color);
-    color:var(--text-white)
+.btncActive {
+  background-color: var(--main-color);
+  color: var(--text-white);
 }
-.btncInactive{
-    color: var(--main-color);
-    background-color:var(--text-white)
+.btncInactive {
+  color: var(--main-color);
+  background-color: var(--text-white);
 }
-@media (min-width: 768px){
-    .btnc{
-        height: 3.5rem;
-    }
+@media (min-width: 768px) {
+  .btnc {
+    height: 3.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .btnc {
+    width: 20%;
+  }
+}
+@media (min-width: 1440px) {
+  .btnsContainer {
+    justify-content: flex-start;
+    margin: 0 12.4rem;
+  }
+  .categoriesTittle {
+      margin-left: 12.4rem;
+  }
 }
