@@ -1,7 +1,7 @@
 import styles from "../styles/navbar.module.css"
 import logo from "../assets/icons/logo.svg"
 import cart from "../assets/icons/cart.svg"
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useContext } from "react";
 import { ProductsContext } from "../context/ProductsProvider/ProductsProvider";
 
@@ -15,12 +15,20 @@ function Navbar() {
                     <span className={styles.brandName}>Amaranta</span>
                 </Link>
             </div>
-            <span className={styles.cartContainer}>
-                <Link to="carrito" >
-                    <img src={cart} alt="cart" />
-                </Link>
-                {cartProducts.length ? <div className={styles.carDot}>{cartProducts.length}</div> : null}
-            </span>
+            <div className={styles.navBtns}>
+                <div className={styles.desktopNavigation}>
+                    <ul>
+                        <li><NavLink to="/">Inicio</NavLink></li>
+                        <li><NavLink to="/productos">Productos</NavLink></li>
+                    </ul>
+                </div>
+                <span className={styles.cartContainer}>
+                    <Link to="carrito" >
+                        <img src={cart} alt="cart" />
+                    </Link>
+                    {cartProducts.length ? <div className={styles.carDot}>{cartProducts.length}</div> : null}
+                </span>
+            </div>
         </nav>
     )
 }
