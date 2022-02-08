@@ -9,7 +9,7 @@ function Cart() {
 
     return (
         <>
-            {cartProducts.length ? <main className={styles.cartMain}>
+            {cartProducts.length ? <div className={styles.cartContainer}><main className={styles.cartMain}>
                 {cartProducts.map((product, i) => (
                     <CartProduct
                         product={product}
@@ -24,7 +24,7 @@ function Cart() {
                         <span className={styles.btnBuyPrice}>$ {totalPrice.toFixed(3)}</span>
                     </Link>
                 </div>
-            </main> : <div className={styles.noProducts}><p>No has agregado<br/>nada al carrito aún :(</p></div>}
+            </main></div> : <div className={styles.noProducts}><p>No has agregado<br/>nada al carrito aún :(</p></div>}
         </>
     )
 }
