@@ -11,46 +11,46 @@ import yellowShirt from "../assets/images/shirtYellow.jpg"
 
 function GridImages() {
     return (
-        <>
-            <div class={styles.gridContainer} >
-                <div class={styles.one}>
+        <div className={styles.container}>
+            <div className={styles.gridContainer} >
+                <div className={styles.one}>
                     <img
                         className={styles.gridImage}
                         src={scarfImg}
                         alt="Modelo con prenda hecha en croshet" />
                 </div>
-                <div class={styles.two}>
+                <div className={styles.two}>
                     <img
                         className={styles.gridImage}
                         src={bustierImg}
                         alt="Modelo con prenda hecha en croshet" />
                 </div>
-                <div class={styles.three}>
+                <div className={styles.three}>
                     <img
                         className={styles.gridImage}
                         src={infiniteScarfImg}
                         alt="Modelo con prenda hecha en croshet" />
                 </div>
-                <div class={styles.four}>
+                <div className={styles.four}>
                     <img
                         className={styles.gridImage}
                         src={grayScarf}
                         alt="Modelo con prenda hecha en croshet" />
                 </div>
-                <div class={styles.five}>
+                <div className={styles.five}>
                     <img
                         className={styles.gridImage}
                         src={yellowShirt}
                         alt="Modelo con prenda hecha en croshet" />
                 </div>
-                <div class={styles.six}>
+                <div className={styles.six}>
                     <img
                         className={styles.gridImage}
                         src={brassierImg}
                         alt="Modelo con prenda hecha en croshet" />
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

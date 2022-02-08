@@ -18,7 +18,7 @@
   margin-right: auto;
   left: 0;
   right: 0;
-  bottom: -2.5rem;
+  bottom: -3.5rem;
 
   color: var(--text-white);
   background-color: var(--main-color);
@@ -32,7 +32,12 @@
 .bgImg {
   width: 100%;
 }
+.containerAboutStore {
+  display: flex;
+  justify-content: center;
+}
 .aboutStore {
+  max-width: 1024px;
   padding: 0 2.4rem;
   margin-bottom: 2.4rem;
 
@@ -40,15 +45,49 @@
   font-size: 1.6rem;
 }
 
-.containerSeeTiktok{
+.containerSeeTiktok {
   display: flex;
   justify-content: center;
 
-  margin-top: .4rem;
+  margin-top: 0.4rem;
 }
-.seeTiktok{
+.seeTiktok {
   text-decoration: underline;
-  font-size: 1.0rem;
-  
+  font-size: 1rem;
+
   color: black;
+}
+
+@media (min-width: 767px) {
+  .containerMain {
+    margin-bottom: calc(8rem + 2.4rem);
+  }
+  .containerMain img {
+    height: 40rem;
+  }
+  .containerBrand {
+    height: 8rem;
+    bottom: -4rem;
+    width: 30rem;
+  }
+  .containerBrand h1 {
+    font-size: 3rem;
+  }
+  .containerBrand span {
+    font-size: 1.6rem;
+  }
+  .aboutStore {
+    padding: 0 4.8rem;
+  }
+  .seeTiktok {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .aboutStore {
+    font-size: 1.8rem;
+  }
+  .seeTiktok {
+    font-size: 1.3rem;
+  }
 }

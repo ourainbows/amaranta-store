@@ -15,9 +15,13 @@ function Home() {
                         <span>La tienda de ropa a tu medida</span>
                     </div>
                 </div>
-                <p className={styles.aboutStore}>En Amaranta encontraras los productos con la mejor calidad del mercado.<br/>
-                Todos nuestros productos son fabricados 100% a mano.
+                <div className={styles.containerAboutStore}>
+                <p className={styles.aboutStore}>Amaranta es un emprendimiento, que aspira llegar a todos los corazones.
+                    Tenemos una amplia variedad de productos con una excelente calidad y lo mejor, son realizados 100% a mano.
+                    Podrás ser o hacer feliz a alguien que lo necesite, incluso a tu mascota.
+                    <br/>No dudes en comprar. ¡Pide ahora!
                 </p>
+                </div>
                 {/* <ButtonProdcuts /> */}
                 <GridImages />
                 <ButtonProdcuts />
@@ -26,7 +30,7 @@ function Home() {
                 </div>
             </main>
             <Footer />
-        </> 
+        </>
     )
 }
 
