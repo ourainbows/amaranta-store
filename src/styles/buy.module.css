@@ -1,5 +1,11 @@
+.containerBuy {
+  display: flex;
+  justify-content: center;
+}
 .mainBuy {
   margin: calc(5.6rem + 3rem) 2.4rem calc(5.3rem + 3rem) 2.4rem;
+  max-width: 800px;
+  width: 100%;
 }
 .mainBuy h2 {
   color: var(--main-color);
@@ -36,7 +42,7 @@
   /* transform: scale(1.1); */
   transition: 0.3s;
   outline: none;
-  box-shadow: 1px 1px 10px #8f8e8e,-1px -1px 10px #8f8e8e ;
+  box-shadow: 1px 1px 10px #8f8e8e, -1px -1px 10px #8f8e8e;
 }
 .productsForm {
   padding: 0 0.8rem;
@@ -85,4 +91,25 @@
 .pInfo {
   color: var(--main-color);
   font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+  .pInfo {
+    font-size: 1.1rem;
+    margin-top: 0.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  .mainBuy {
+    margin-left: 4.8rem;
+    margin-right: 4.8rem;
+  }
+  .price {
+    font-size: 2rem;
+  }
+  .bigDvider {
+    margin-top: 4.4rem;
+  }
+  .form {
+    margin-bottom: 4rem;
+  }
 }
