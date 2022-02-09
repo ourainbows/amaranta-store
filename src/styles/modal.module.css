@@ -45,6 +45,9 @@
   margin-top: 2rem;
   width: 100%;
 }
+.btnBuy a:hover{
+  background-color: #470a28;
+}
 .btnBuy a {
   display: flex;
   height: 4rem;
@@ -66,6 +69,7 @@
   color: var(--text-white);
   font-size: 3rem;
   position: absolute;
+  cursor: pointer;
 }
 @media (min-width: 1024px) {
   .tittle {
