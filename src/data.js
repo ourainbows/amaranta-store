@@ -16,7 +16,7 @@ const dataProducts = [
     {
         id: 1,
         name: "Bustier",
-        colors: ["#5A0912", "#BF8B38", "#0F858C"],
+        colors: ["#920A0A", "#FFFFFF", "#222222"],
         size: ["u"],
         price: 35.000,
         category: 1,
@@ -25,7 +25,7 @@ const dataProducts = [
     {
         id: 2,
         name: "Saco mascota",
-        colors: ["#C0478E", "#120820", "#C1B8B6"],
+        colors: ["#FF66C4", "#5E17EB", "#A6A6A6"],
         size: ["U"],
         price: 20.000,
         category: 2,
@@ -34,7 +34,7 @@ const dataProducts = [
     {
         id: 3,
         name: "Bufanda Infinita",
-        colors: ["#CE8F30", "#405459"],
+        colors: ["#FFDE59", "#65CB65"],
         size: ["U"],
         price: 25.000,
         category: 1,
@@ -43,7 +43,7 @@ const dataProducts = [
     {
         id: 4,
         name: "Interiores",
-        colors: ["#5A85A5", "#B3BDC6", "#5A0912"],
+        colors: ["#22BACB", "#A6A6A6", "#920A0A","#FFFFFF"],
         size: ["U"],
         price: 45.000,
         category: 1,
@@ -52,7 +52,7 @@ const dataProducts = [
     {
         id: 5,
         name: "Bufanda",
-        colors: ["#306764"],
+        colors: ["#008037", "#FFFFFF","#A6A6A6"],
         size: ["U"],
         price: 20.000,
         category: 1,
@@ -61,7 +61,7 @@ const dataProducts = [
     {
         id: 6,
         name: "Gorro mascota",
-        colors: ["#608BAC"],
+        colors: ["#22BACB","#5E17EB"],
         size: ["U"],
         price: 10.000,
         category: 2,
@@ -70,7 +70,7 @@ const dataProducts = [
     {
         id: 7,
         name: "Conjunto",
-        colors: ["#955E6B", "#A6A7A2"],
+        colors: ["#EF6622", "#A6A6A6", "#65CB65"],
         size: ["U"],
         price: 25.000,
         category: 2,
@@ -79,7 +79,7 @@ const dataProducts = [
     {
         id: 8,
         name: "Bufanda Larga",
-        colors: ["#4F535B", "#807269"],
+        colors: ["#222222", "#FFFFFF"],
         size: ["U"],
         price: 25.000,
         category: 1,
@@ -88,7 +88,7 @@ const dataProducts = [
     {
         id: 9,
         name: "Brassier",
-        colors: ["#CDA0B5", "#80A9A3"],
+        colors: ["#FF66C4", "#22BACB", "#FFDE59"],
         size: ["U"],
         price: 25.000,
         category: 1,
@@ -97,7 +97,7 @@ const dataProducts = [
     {
         id: 10,
         name: "Mochila",
-        colors: ["#725037", "#D4D5D0"],
+        colors: ["#920A0A", "#FFFFFF", "#222222"],
         size: ["U"],
         price: 15.000,
         category: 2,
@@ -106,7 +106,7 @@ const dataProducts = [
     {
         id: 11,
         name: "Billetera",
-        colors: ["#63694F", "#D57434", "#5F5959", "#D5D3C4", ],
+        colors: ["#65CB65", "#EF6622", "#A6A6A6", "#FFFFFF", ],
         size: ["U"],
         price: 15.000,
         category: 2,
@@ -115,7 +115,7 @@ const dataProducts = [
     {
         id: 12,
         name: "Pañoleta",
-        colors: ["#101627", "#5D2111"],
+        colors: ["#222222", "#A6A6A6", "#920A0A", "#008037"],
         size: ["U"],
         price: 10.000,
         category: 2,

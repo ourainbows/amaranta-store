@@ -17,7 +17,7 @@ function Buy() {
         cartProducts.forEach(product => {
             text += `${product.name}\n`
             text += `Talla: ${product.height}\n`
-            text += `Color:  ${product.color.replace("#", "")}\n`
+            text += `Color:  ${product.color.replace("#", "").slice(0,3)}\n`
             text += `Cantidad: ${product.quantity}\n`
             text += `Precio: ${product.value.toFixed(3)}\n\n`
         })
