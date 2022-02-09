@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { HashRouter, Route, Routes } from "react-router-dom"
 
 import { Navbar } from "../components/Navbar"
 import { Navigation } from "../components/Navigation"
@@ -13,7 +13,7 @@ import { Products } from "../pages/Products"
 function RoutesContainer() {
     return (
         <ProductsProvider>
-            <BrowserRouter basename="/amaranta-store">
+            <HashRouter basename="/amaranta-store">
                 <ScrollToTop/>
                 <Navbar />
                 <Routes>
@@ -24,7 +24,7 @@ function RoutesContainer() {
                     <Route path="/*" element={<NotFound />} />
                 </Routes>
                 <Navigation />
-            </BrowserRouter>
+            </HashRouter>
         </ProductsProvider>
     )
 }
