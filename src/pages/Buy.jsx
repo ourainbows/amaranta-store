@@ -25,8 +25,10 @@ function Buy() {
         text += `\nEl valor total de mi compra es: $${totalPrice.toFixed(3)}`
         setUrl(encodeURI(text))
         setCartProducts([])
+        
         setTimeout(() => {
             navigate("/")
+            setStatusModal(false)
         });
     }
     const handleChange = (event) => {

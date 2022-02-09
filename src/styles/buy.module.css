@@ -90,6 +90,7 @@
   justify-content: center;
   background-color: inherit;
   border: none;
+  cursor: pointer;
 }
 .btnBuy button:hover {
   border-radius: 5px;
