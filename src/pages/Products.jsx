@@ -27,13 +27,13 @@ function Products() {
                         ${styles.btnc} , 
                         ${currentCategory === 1 ? styles.btncActive : styles.btncInactive}
                     `}
-                    onClick={() => { onFilterProduct(1) }}>Mujer</button>
+                    onClick={() => { onFilterProduct(1) }}>Prendas</button>
                 <button
                     className={`
                         ${styles.btnc} , 
                         ${currentCategory === 2 ? styles.btncActive : styles.btncInactive}
                     `}
-                    onClick={() => { onFilterProduct(2) }}>Otros</button>
+                    onClick={() => { onFilterProduct(2) }}>Accesorios</button>
             </div>
 
             <Catalog

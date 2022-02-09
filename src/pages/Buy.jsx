@@ -12,7 +12,7 @@ function Buy() {
     const { cartProducts, totalPrice, setCartProducts, statusModal, setStatusModal } = useContext(ProductsContext)
     const [url, setUrl] = useState("")
     const message = () => {
-        let text = "https://wa.me/573156595651?text="
+        let text = "https://wa.me/573022232832?text="
         text += `Bienvenido a Amaranta ${inputs.user ? inputs.user : ""}, hemos visto que estas interesado en los siguientes productos: \n\n`
         cartProducts.forEach(product => {
             text += `${product.name}\n`
@@ -23,7 +23,7 @@ function Buy() {
         })
         text += `\nAdicionalmente tienes los siguientes comentarios: \n${inputs.comments ? inputs.comments : ""}\n`
         text += `\nEl valor total de tu compra es: $${totalPrice.toFixed(3)}`
-        text += `\nGracias por confiar en nostros, nos podremos en contacto contigo muy pronto para terminar tu compra.\n`
+        text += `\n\nGracias por confiar en nostros, nos podremos en contacto contigo muy pronto para terminar tu compra.\n`
         setUrl(encodeURI(text))
         setCartProducts([])
         
