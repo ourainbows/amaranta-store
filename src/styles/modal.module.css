@@ -67,7 +67,7 @@
   font-size: 3rem;
   position: absolute;
 }
-@media (min-width: ) {
+@media (min-width: 1024px) {
   .tittle {
     font-size: 1.6rem;
   }
