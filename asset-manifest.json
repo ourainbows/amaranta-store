@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/amaranta-store/static/css/main.2ebbbe8c.css",
+    "main.js": "/amaranta-store/static/js/main.64b26eca.js",
+    "static/media/hatPet.jpg": "/amaranta-store/static/media/hatPet.2d3af06f6abe3a878bec.jpg",
+    "static/media/bgCoat.jpg": "/amaranta-store/static/media/bgCoat.a670d754e0a117c2f465.jpg",
+    "static/media/shirtYellow.jpg": "/amaranta-store/static/media/shirtYellow.234861463ea9de91f4e7.jpg",
+    "static/media/sacoMascota.jpg": "/amaranta-store/static/media/sacoMascota.813612c8dda00837efde.jpg",
+    "static/media/clothePet.jpg": "/amaranta-store/static/media/clothePet.0bc192b287c2845dc2c3.jpg",
+    "static/media/bags.jpeg": "/amaranta-store/static/media/bags.d714c0df1f3b1f781223.jpeg",
+    "static/media/bustier.jpg": "/amaranta-store/static/media/bustier.c50d6d5c72993ce63027.jpg",
+    "static/media/grayScarf.jpeg": "/amaranta-store/static/media/grayScarf.3733a55433670022ae84.jpeg",
+    "static/media/dogFlag.jpeg": "/amaranta-store/static/media/dogFlag.b749bde9661297d3901f.jpeg",
+    "static/media/gaban.jpeg": "/amaranta-store/static/media/gaban.987760d8fcd10b4abfd2.jpeg",
+    "static/media/brassier.jpg": "/amaranta-store/static/media/brassier.d282531f211c786c31ca.jpg",
+    "static/media/bufandaInfinita.jpg": "/amaranta-store/static/media/bufandaInfinita.f4655165c3fee80f6967.jpg",
+    "static/media/conjuntoMujer.jpg": "/amaranta-store/static/media/conjuntoMujer.1db7e4db4c1aad972c76.jpg",
+    "static/media/bufanda.jpg": "/amaranta-store/static/media/bufanda.d2ada1ef1cba64a8be00.jpg",
+    "static/media/bag.jpeg": "/amaranta-store/static/media/bag.0d049425776d6163deda.jpeg",
+    "static/media/logo.svg": "/amaranta-store/static/media/logo.a61a9e70c442968c56352c6ef683ffdd.svg",
+    "static/media/logoFooter.svg": "/amaranta-store/static/media/logoFooter.e5f7b34117273a5ae5c82942276ccc9c.svg",
+    "static/media/cart.svg": "/amaranta-store/static/media/cart.ec0df3af853680481a10b506b7cc31bc.svg",
+    "index.html": "/amaranta-store/index.html",
+    "main.2ebbbe8c.css.map": "/amaranta-store/static/css/main.2ebbbe8c.css.map",
+    "main.64b26eca.js.map": "/amaranta-store/static/js/main.64b26eca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ebbbe8c.css",
+    "static/js/main.64b26eca.js"
+  ]
+}
