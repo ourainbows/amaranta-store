@@ -54,7 +54,7 @@ function Buy() {
                     />
                     <textarea
                         name="comments"
-                        placeholder="Comentarios o requerimientos adicionales"
+                        placeholder="Comentarios, preguntas y requerimientos adicionales"
                         onChange={handleChange}
                     />
                 </form>
@@ -72,7 +72,6 @@ function Buy() {
                     <a href={url} onClick={message} target="_blank" rel="noreferrer">COMPRAR</a>
                 </div>
                 <p className={styles.pInfo}>* Serás redireccionado a Whatsapp para terminar tu compra</p>
-                <button onClick={message}>Clickkkdkasdlas</button>
             </div>
         </main>
     )

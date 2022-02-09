@@ -86,12 +86,11 @@
 @media (min-width: 1024px) {
   .aboutStore {
     font-size: 1.8rem;
+    text-align: center;
   }
   .seeTiktok {
     font-size: 1.3rem;
   }
-}
-@media (min-width: 1024px) {
   .containerBrand {
     width: 50rem;
     height: 12rem;
@@ -104,3 +103,5 @@
     font-size: 1.8rem;
   }
 }
+
+  

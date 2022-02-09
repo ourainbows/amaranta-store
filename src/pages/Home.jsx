@@ -16,10 +16,10 @@ function Home() {
                     </div>
                 </div>
                 <div className={styles.containerAboutStore}>
-                <p className={styles.aboutStore}>Amaranta es un emprendimiento, que aspira llegar a todos los corazones.
-                    Tenemos una amplia variedad de productos con una excelente calidad y lo mejor, son realizados 100% a mano.
-                    Podrás ser o hacer feliz a alguien que lo necesite, incluso a tu mascota.
-                    <br/>No dudes en comprar. ¡Pide ahora!
+                <p className={styles.aboutStore}>Amaranta, es un emprendimiento que aspira llegar a todos los corazones.
+                    Tenemos una amplia variedad de productos con una excelente calidad y lo mejor ¡Son realizados 100% a mano!
+                        <br />Podrás ser o hacer feliz a alguien que lo necesite, incluso a tu mascota.
+                        <br />No dudes en comprar. a amplia variedad de productos con una excelente calidad y lo mejor ¡Son realizados 100% a mano! <br />¡Pide ahora!
                 </p>
                 </div>
                 {/* <ButtonProdcuts /> */}
