@@ -27,7 +27,7 @@
   justify-content: center;
   background-color: #470a28;
   border-radius: 5px 5px 0 0;
-  font-size: 2.0rem
+  font-size: 1.3rem;
 }
 .info {
   height: 80%;
@@ -66,4 +66,9 @@
   color: var(--text-white);
   font-size: 3rem;
   position: absolute;
+}
+@media (min-width: ) {
+  .tittle {
+    font-size: 1.6rem;
+  }
 }
