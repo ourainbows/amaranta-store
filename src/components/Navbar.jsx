@@ -6,9 +6,9 @@ import { useContext } from "react";
 import { ProductsContext } from "../context/ProductsProvider/ProductsProvider";
 
 function Navbar() {
-    const { cartProducts } = useContext(ProductsContext)
+    const { cartProducts, statusModal } = useContext(ProductsContext)
     return (
-        <nav className={styles.navbar}>
+        <nav className={`${styles.navbar} ${statusModal && styles.navbarFilter}`}>
             <div className={styles.logoContainer}>
                 <Link to="/" className={styles.logoLink}>
                     <img className={styles.brandImg} src={logo} alt="logo" />

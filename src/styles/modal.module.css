@@ -1,0 +1,68 @@
+.modal {
+  position: fixed;
+  background-color: rgba(32, 35, 41, 0.8);
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.containerModal {
+  height: 30rem;
+  width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+}
+.tittle {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  color: var(--text-white);
+  justify-content: center;
+  background-color: #470a28;
+  border-radius: 5px 5px 0 0;
+}
+.info {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.info p {
+  font-size: 2rem;
+  width: 60%;
+  text-align: center;
+}
+.btnBuy {
+  margin-top: 2rem;
+  width: 100%;
+}
+.btnBuy a {
+  display: flex;
+  height: 4rem;
+  width: 60%;
+  background: var(--main-color);
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-white);
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+.close {
+  top: -40px;
+  right: -24px;
+  border: none;
+  background: none;
+  color: var(--text-white);
+  font-size: 3rem;
+  position: absolute;
+}

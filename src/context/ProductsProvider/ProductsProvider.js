@@ -4,6 +4,7 @@ const ProductsContext = createContext()
 
 function ProductsProvider(props) {
     const [cartProducts, setCartProducts] = useState([])
+    const [statusModal, setStatusModal] = useState(false)
     const totalPrice = cartProducts.reduce(
         (previousValue, currentValue) => previousValue + currentValue.price * currentValue.quantity, 0
     )
@@ -12,6 +13,8 @@ function ProductsProvider(props) {
             cartProducts,
             setCartProducts,
             totalPrice,
+            statusModal,
+            setStatusModal
         }}
         >
             {props.children}

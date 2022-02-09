@@ -13,6 +13,9 @@
   box-shadow: 0 4px 4px rgb(43 36 36 / 76%);
   background-color: var(--main-color);
 }
+.navbarFilter{
+  filter: blur(5px);
+}
 .desktopNavigation {
   display: none;
 }
