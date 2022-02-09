@@ -22,8 +22,8 @@ function Buy() {
             text += `Precio: ${product.value.toFixed(3)}\n\n`
         })
         text += `\nAdicionalmente tienes los siguientes comentarios: \n${inputs.comments ? inputs.comments : ""}\n`
-        text += `\nEl valor total de mi compra es: $${totalPrice.toFixed(3)}`
-        text += `\nGracias por confiar en Amaranta, nos podremos en contacto contigo muy pronto para terminar tu compra\n`
+        text += `\nEl valor total de tu compra es: $${totalPrice.toFixed(3)}`
+        text += `\nGracias por confiar en nostros, nos podremos en contacto contigo muy pronto para terminar tu compra.\n`
         setUrl(encodeURI(text))
         setCartProducts([])
         
