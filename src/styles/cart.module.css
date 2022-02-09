@@ -23,10 +23,10 @@
   height: 4.5rem;
   border-radius: 5px;
   font-size: 1.8rem;
-  padding: 0 0.8rem;
+  /* padding: 0 0.8rem; */
   margin-top: 4rem;
+  overflow: hidden;
 }
-
 .btnBuy {
   text-decoration: none;
   color: var(--text-white);
@@ -36,6 +36,11 @@
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
+  padding: 0 .4rem;
+  
+}
+.btnBuy:hover {
+  background-color: #470a28;
 }
 .btnBuyPrice {
   font-weight: 600;

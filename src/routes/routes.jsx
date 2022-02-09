@@ -13,7 +13,7 @@ import { Products } from "../pages/Products"
 function RoutesContainer() {
     return (
         <ProductsProvider>
-            <BrowserRouter>
+            <BrowserRouter basename="/amaranta-store">
                 <ScrollToTop/>
                 <Navbar />
                 <Routes>

@@ -16,6 +16,9 @@
   font-size: 1.7rem;
   border-radius: 3px;
 }
+.buttonProducts:hover{
+  background-color: #470a28;
+}
 @media (min-width: 768px) {
   .buttonProducts {
     width: 24rem;

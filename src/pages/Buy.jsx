@@ -13,7 +13,7 @@ function Buy() {
     const [url, setUrl] = useState("")
     const message = () => {
         let text = "https://wa.me/573156595651?text="
-        text += `Buenas tardes mi nombre es ${inputs.user ? inputs.user : ""}, te contacto desde la tienda en linea Amaranta, estoy interesad@ en los siguientes productos: \n\n`
+        text += `Bienvenido a Amaranta ${inputs.user ? inputs.user : ""}, hemos visto que estas interesado en los siguientes productos: \n\n`
         cartProducts.forEach(product => {
             text += `${product.name}\n`
             text += `Talla: ${product.height}\n`
@@ -21,8 +21,9 @@ function Buy() {
             text += `Cantidad: ${product.quantity}\n`
             text += `Precio: ${product.value.toFixed(3)}\n\n`
         })
-        text += `\nAdicionalmente tengo los siguientes comentarios: \n${inputs.comments ? inputs.comments : ""}\n`
+        text += `\nAdicionalmente tienes los siguientes comentarios: \n${inputs.comments ? inputs.comments : ""}\n`
         text += `\nEl valor total de mi compra es: $${totalPrice.toFixed(3)}`
+        text += `\nGracias por confiar en Amaranta, nos podremos en contacto contigo muy pronto para terminar tu compra\n`
         setUrl(encodeURI(text))
         setCartProducts([])
         
