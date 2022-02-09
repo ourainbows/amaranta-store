@@ -7,7 +7,7 @@ function Modal({ setStatusModal, url, message }) {
         <div className={styles.modal}>
             <div className={styles.containerModal}>
                 <div className={styles.tittle}>
-                    <h2>Completa tu compra!</h2>
+                    <h2>¡Completa tu compra!</h2>
                 </div>
                 <div className={styles.info}>
                     <p>Seras redireccionado a whatsapp para completar tu compra</p>
