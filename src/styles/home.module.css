@@ -91,3 +91,16 @@
     font-size: 1.3rem;
   }
 }
+@media (min-width: 1024px) {
+  .containerBrand {
+    width: 50rem;
+    height: 12rem;
+    bottom: -6rem;
+  }
+  .containerBrand h1 {
+    font-size: 4rem;
+  }
+  .containerBrand span {
+    font-size: 1.8rem;
+  }
+}

@@ -1,13 +1,14 @@
 import { useContext, useState } from "react"
+import { useNavigate } from "react-router-dom"
 import { BuyProduct } from "../components/BuyProduct"
 import { ProductsContext } from "../context/ProductsProvider/ProductsProvider"
 import styles from "../styles/buy.module.css"
 
 function Buy() {
+    const navigate = useNavigate()
     const [inputs, setInputs] = useState({})
-    const { cartProducts, totalPrice } = useContext(ProductsContext)
+    const { cartProducts, totalPrice, setCartProducts } = useContext(ProductsContext)
     const [url, setUrl] = useState("")
-
     const message = () => {
         let text = "https://wa.me/573156595651?text="
         text += `Buenas tardes mi nombre es ${inputs.user ? inputs.user : ""}, te contacto desde la tienda en linea Amaranta, estoy interesad@ en los siguientes productos: \n\n`
@@ -21,6 +22,10 @@ function Buy() {
         text += `\nAdicionalmente tengo los siguientes comentarios: \n${inputs.comments ? inputs.comments : ""}\n`
         text += `\nEl valor total de mi compra es: $${totalPrice.toFixed(3)}`
         setUrl(encodeURI(text))
+        setCartProducts([])
+        setTimeout(() => {
+            navigate("/")
+        }, );
     }
     const handleChange = (event) => {
         const name = event.target.name
@@ -52,7 +57,6 @@ function Buy() {
                         placeholder="Comentarios o requerimientos adicionales"
                         onChange={handleChange}
                     />
-                    {/* <input type="submit" /> */}
                 </form>
                 <div className={styles.productsForm}>
                     {cartProducts.map((product, i) => (
@@ -68,6 +72,7 @@ function Buy() {
                     <a href={url} onClick={message} target="_blank" rel="noreferrer">COMPRAR</a>
                 </div>
                 <p className={styles.pInfo}>* Serás redireccionado a Whatsapp para terminar tu compra</p>
+                <button onClick={message}>Clickkkdkasdlas</button>
             </div>
         </main>
     )

@@ -11,7 +11,7 @@ function ProductsProvider(props) {
         <ProductsContext.Provider value={{
             cartProducts,
             setCartProducts,
-            totalPrice
+            totalPrice,
         }}
         >
             {props.children}
