@@ -31,6 +31,7 @@
 }
 .bgImg {
   width: 100%;
+  object-fit: cover;
 }
 .containerAboutStore {
   display: flex;
