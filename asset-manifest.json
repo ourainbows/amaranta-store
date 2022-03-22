@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/amaranta-store/static/css/main.d4b7bfe5.css",
+    "main.css": "/amaranta-store/static/css/main.f9749bab.css",
     "main.js": "/amaranta-store/static/js/main.ba42b75d.js",
     "static/media/hatPet.jpg": "/amaranta-store/static/media/hatPet.2d3af06f6abe3a878bec.jpg",
     "static/media/bgCoat.jpg": "/amaranta-store/static/media/bgCoat.a670d754e0a117c2f465.jpg",
@@ -21,11 +21,11 @@
     "static/media/logoFooter.svg": "/amaranta-store/static/media/logoFooter.e5f7b34117273a5ae5c82942276ccc9c.svg",
     "static/media/cart.svg": "/amaranta-store/static/media/cart.ec0df3af853680481a10b506b7cc31bc.svg",
     "index.html": "/amaranta-store/index.html",
-    "main.d4b7bfe5.css.map": "/amaranta-store/static/css/main.d4b7bfe5.css.map",
+    "main.f9749bab.css.map": "/amaranta-store/static/css/main.f9749bab.css.map",
     "main.ba42b75d.js.map": "/amaranta-store/static/js/main.ba42b75d.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4b7bfe5.css",
+    "static/css/main.f9749bab.css",
     "static/js/main.ba42b75d.js"
   ]
 }
